@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>Cayana</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +10,19 @@
   </head>
 
   <body>
+
+    <div id="navbar">
+    <a href="/">
+    <%= image_tag ("logo.png") %>
+    </a>
+    </div>
+
     <%= yield %>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
   </body>
 </html>
