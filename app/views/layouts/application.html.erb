@@ -11,18 +11,35 @@
 
   <body>
 
-    <div id="navbar">
-    <a href="/">
-    <%= image_tag ("logo.png") %>
-    </a>
-    </div>
+<header>
+  <nav>
+     <a href="/">
+<ul>
+  <li>   <%= image_tag ("logo.png") %>
+  </li>
+  <li><strong>Cayana</strong></li>
+</ul>
 
-    <%= yield %>
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
+ </a>
+<ul>
+  <li><a href="#">Link</a></li>
+  <li><a href="#">Link</a></li>
+  <li><a href="#" role="button">Button</a></li>
+</ul>
+</nav>
+</header>
+
+
+    <main>
+      <%= yield %>
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+    </main>
+
+
   </body>
 </html>
