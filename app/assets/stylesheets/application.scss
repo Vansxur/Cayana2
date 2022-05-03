@@ -37,6 +37,26 @@
   --switch-checked-background-color: var(--primary);
 }
 
+nav {
+  margin: 20px;
+  height: 100px;
+  display: flex;
+}
+
+.div_profile {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+   background: none;
+   border: none;
+   margin: auto;
+   height: 100%;
+}
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
