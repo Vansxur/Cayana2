@@ -55,7 +55,11 @@ button {
    height: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
